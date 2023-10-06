@@ -81,7 +81,9 @@
         // window.addEventListener("alertDismissed", startAnimation);
 
         if(/mobi|Android/i.test(navigator.userAgent)){
-            document.body.innerHTML = "<div> sorry this you dont ahave access from phone</div>";
+            if(window.innerWidth <= 768){
+                document.body.innerHTML = "<div> sorry this you dont ahave access from phone</div>";
+            }
         }
     </script>
 </body>
