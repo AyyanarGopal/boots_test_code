@@ -67,7 +67,13 @@
     <div class="closedoor1" id="closedoor1"></div>
     <div class="closedoor2" id="closedoor2"></div>
 
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eos reiciendis dolor a nesciunt repellendus maiores dolorem, incidunt ex ad similique architecto placeat officia voluptatibus necessitatibus, aut sed quos, dolores eum facilis iure cumque. Quod amet non, laborum delectus qui ab, iste nulla ex vitae praesentium maiores ipsa perspiciatis, officia alias dolore fugiat deleniti nemo repudiandae neque. Repellat sapiente distinctio hic iure! Aspernatur nostrum odio, dolore vitae distinctio inventore recusandae id nam nulla in dolor deleniti voluptatem est eius maxime magni minima suscipit, eaque error cum! Pariatur, ipsum! Suscipit dolorum culpa ex magnam delectus temporibus porro ut quia, excepturi reiciendis.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eos reiciendis dolor a nesciunt repellendus
+        maiores dolorem, incidunt ex ad similique architecto placeat officia voluptatibus necessitatibus, aut sed quos,
+        dolores eum facilis iure cumque. Quod amet non, laborum delectus qui ab, iste nulla ex vitae praesentium maiores
+        ipsa perspiciatis, officia alias dolore fugiat deleniti nemo repudiandae neque. Repellat sapiente distinctio hic
+        iure! Aspernatur nostrum odio, dolore vitae distinctio inventore recusandae id nam nulla in dolor deleniti
+        voluptatem est eius maxime magni minima suscipit, eaque error cum! Pariatur, ipsum! Suscipit dolorum culpa ex
+        magnam delectus temporibus porro ut quia, excepturi reiciendis.</p>
 
     <script>
         // window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
@@ -79,12 +85,15 @@
         // }
 
         // window.addEventListener("alertDismissed", startAnimation);
+        var userAgent = navigator.userAgent.toLowerCase();
 
-        if(/Mobi|Android/i.test(navigator.userAgent)){
-            if(window.innerWidth <= 2400){
-                document.body.innerHTML = "<div> sorry </div>";
-            }
+        if (userAgent.indexOf("android") > -1) {
+
+            document.body.innerHTML = "<div> sambkjh</div>";
+
         }
+
+
     </script>
 </body>
 
