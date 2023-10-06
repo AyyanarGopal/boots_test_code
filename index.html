@@ -70,15 +70,19 @@
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eos reiciendis dolor a nesciunt repellendus maiores dolorem, incidunt ex ad similique architecto placeat officia voluptatibus necessitatibus, aut sed quos, dolores eum facilis iure cumque. Quod amet non, laborum delectus qui ab, iste nulla ex vitae praesentium maiores ipsa perspiciatis, officia alias dolore fugiat deleniti nemo repudiandae neque. Repellat sapiente distinctio hic iure! Aspernatur nostrum odio, dolore vitae distinctio inventore recusandae id nam nulla in dolor deleniti voluptatem est eius maxime magni minima suscipit, eaque error cum! Pariatur, ipsum! Suscipit dolorum culpa ex magnam delectus temporibus porro ut quia, excepturi reiciendis.</p>
 
     <script>
-        window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
-        window.alert("I haven't fully completed this game yet due to a lack of time, but I plan to finish it in the upcoming days.");
+        // window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
+        // window.alert("I haven't fully completed this game yet due to a lack of time, but I plan to finish it in the upcoming days.");
 
-        function startAnimation() {
-            document.getElementById("closedoor1").classList.add("");
-            document.getElementById("closedoor2").classList.add("startAnimation");
+        // function startAnimation() {
+        //     document.getElementById("closedoor1").classList.add("");
+        //     document.getElementById("closedoor2").classList.add("startAnimation");
+        // }
+
+        // window.addEventListener("alertDismissed", startAnimation);
+
+        if(/mobi|Android/i.test(navigator.userAgent)){
+            document.body.innerHTML = "<div> sorry this you dont ahave access from phone</div>";
         }
-
-        window.addEventListener("alertDismissed", startAnimation);
     </script>
 </body>
 
