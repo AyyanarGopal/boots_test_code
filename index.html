@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body {
+            overflow: hidden;
+        }
+
         #closedoor1 {
             background-color: black;
             height: 100vh;
@@ -46,14 +50,11 @@
                 right: -700px;
             }
         }
-
-        h1 {
-            color: red
-        }
     </style>
 </head>
 
 <body>
+
     <div id="closedoor1"></div>
     <div id="closedoor2"></div>
 
@@ -61,7 +62,7 @@
 
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             if (window.innerWidth <= 768) {
-                window.location.href = "warning_page.html";
+                window.location.href = "summa2.html";
             }
         } else {
             alert("i haven't fully completed this game yet due to a lack of time, but i plan to finish it in the upcoming days")
