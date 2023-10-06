@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .closedoor1 {
+            background-color: black;
+            height: 100vh;
+            background: repeating-linear-gradient(90deg, red, black 103px);
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 50%;
+            animation: door1 5s;
+            animation-fill-mode: both;
+            z-index: 2;
+            box-shadow: inset -10px -4px 17px 20px;
+            border-radius: 0%;
+        }
+
+        .closedoor2 {
+            background-color: black;
+            background: repeating-linear-gradient(90deg, red, black 103px);
+            height: 100vh;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50%;
+            animation: door2 5s;
+            animation-fill-mode: both;
+            z-index: 2;
+            box-shadow: inset -10px -4px 17px 20px;
+        }
+
+        @keyframes door1 {
+            100% {
+                left: -700px;
+            }
+        }
+
+        @keyframes door2 {
+            100% {
+                right: -700px;
+            }
+        }
+
+        @keyframes lorryaccident {
+            0% {
+                left: -25%;
+            }
+
+            50% {
+                left: 18%;
+            }
+
+            100% {
+                left: -25%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="closedoor1" id="closedoor1"></div>
+    <div class="closedoor2" id="closedoor2"></div>
+
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eos reiciendis dolor a nesciunt repellendus maiores dolorem, incidunt ex ad similique architecto placeat officia voluptatibus necessitatibus, aut sed quos, dolores eum facilis iure cumque. Quod amet non, laborum delectus qui ab, iste nulla ex vitae praesentium maiores ipsa perspiciatis, officia alias dolore fugiat deleniti nemo repudiandae neque. Repellat sapiente distinctio hic iure! Aspernatur nostrum odio, dolore vitae distinctio inventore recusandae id nam nulla in dolor deleniti voluptatem est eius maxime magni minima suscipit, eaque error cum! Pariatur, ipsum! Suscipit dolorum culpa ex magnam delectus temporibus porro ut quia, excepturi reiciendis.</p>
+
+    <script>
+        window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
+        window.alert("I haven't fully completed this game yet due to a lack of time, but I plan to finish it in the upcoming days.");
+
+        function startAnimation() {
+            document.getElementById("closedoor1").classList.add("");
+            document.getElementById("closedoor2").classList.add("startAnimation");
+        }
+
+        window.addEventListener("alertDismissed", startAnimation);
+    </script>
+</body>
+
+</html>
