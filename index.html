@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .closedoorfirst {
+        #closedoor1 {
             background-color: black;
             height: 100vh;
             background: repeating-linear-gradient(90deg, red, black 103px);
@@ -21,7 +21,7 @@
             border-radius: 0%;
         }
 
-        .closedoorsecond {
+        #closedoor2 {
             background-color: black;
             background: repeating-linear-gradient(90deg, red, black 103px);
             height: 100vh;
@@ -46,38 +46,23 @@
                 right: -700px;
             }
         }
-
-        @keyframes lorryaccident {
-            0% {
-                left: -25%;
-            }
-
-            50% {
-                left: 18%;
-            }
-
-            100% {
-                left: -25%;
-            }
-        }
     </style>
 </head>
 
 <body>
-    <div class="closedoorfirst" id="closedoor1"></div>
-    <div class="closedoorsecond" id="closedoor2"></div>
+    <div id="closedoor1"></div>
+    <div id="closedoor2"></div>
 
     <script>
-        window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
-        window.alert("I haven't fully completed this game yet due to a lack of time, but I plan to finish it in the upcoming days.");
 
-        function startAnimation() {
-            document.getElementById("closedoor1").classList.add("startAnimation");
-            document.getElementById("closedoor2").classList.add("startAnimation");
+        alert("i haven't fully completed this game yet due to a lack of time, but i plan to finish it in the upcoming days")
+
+        if (/Mobi|Android/i.test(navigator.userAgent)) {
+            if (window.innerWidth <= 768) {
+                document.body.innerHTML = "<div>Sorry..Mobile or tablet users are not allowed to play this small game..because this game is currently design into PC or Laptop..</div>";
+            }
         }
 
-        window.addEventListener("alertDismissed", startAnimation);
-    
     </script>
 </body>
 
