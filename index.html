@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .closedoor1 {
+        .closedoorfirst {
             background-color: black;
             height: 100vh;
             background: repeating-linear-gradient(90deg, red, black 103px);
@@ -21,7 +21,7 @@
             border-radius: 0%;
         }
 
-        .closedoor2 {
+        .closedoorsecond {
             background-color: black;
             background: repeating-linear-gradient(90deg, red, black 103px);
             height: 100vh;
@@ -64,36 +64,20 @@
 </head>
 
 <body>
-    <div class="closedoor1" id="closedoor1"></div>
-    <div class="closedoor2" id="closedoor2"></div>
-
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam eos reiciendis dolor a nesciunt repellendus
-        maiores dolorem, incidunt ex ad similique architecto placeat officia voluptatibus necessitatibus, aut sed quos,
-        dolores eum facilis iure cumque. Quod amet non, laborum delectus qui ab, iste nulla ex vitae praesentium maiores
-        ipsa perspiciatis, officia alias dolore fugiat deleniti nemo repudiandae neque. Repellat sapiente distinctio hic
-        iure! Aspernatur nostrum odio, dolore vitae distinctio inventore recusandae id nam nulla in dolor deleniti
-        voluptatem est eius maxime magni minima suscipit, eaque error cum! Pariatur, ipsum! Suscipit dolorum culpa ex
-        magnam delectus temporibus porro ut quia, excepturi reiciendis.</p>
+    <div class="closedoorfirst" id="closedoor1"></div>
+    <div class="closedoorsecond" id="closedoor2"></div>
 
     <script>
-        // window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
-        // window.alert("I haven't fully completed this game yet due to a lack of time, but I plan to finish it in the upcoming days.");
+        window.alert("if you see this game in your phone or tablet, please close it. because This small game is only designed for desktop");
+        window.alert("I haven't fully completed this game yet due to a lack of time, but I plan to finish it in the upcoming days.");
 
-        // function startAnimation() {
-        //     document.getElementById("closedoor1").classList.add("");
-        //     document.getElementById("closedoor2").classList.add("startAnimation");
-        // }
-
-        // window.addEventListener("alertDismissed", startAnimation);
-        var userAgent = navigator.userAgent.toLowerCase();
-
-        if (userAgent.indexOf("android") > -1) {
-
-            document.body.innerHTML = "<div> sambkjh</div>";
-
+        function startAnimation() {
+            document.getElementById("closedoor1").classList.add("startAnimation");
+            document.getElementById("closedoor2").classList.add("startAnimation");
         }
 
-
+        window.addEventListener("alertDismissed", startAnimation);
+    
     </script>
 </body>
 
