@@ -1,74 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            overflow: hidden;
+        *{
+            box-sizing: border-box;
         }
 
-        #closedoor1 {
-            background-color: black;
-            height: 100vh;
-            background: repeating-linear-gradient(90deg, red, black 103px);
-            position: absolute;
-            left: 0;
-            top: 0;
-            width: 50%;
-            animation: door1 5s;
-            animation-fill-mode: both;
-            z-index: 2;
-            box-shadow: inset -10px -4px 17px 20px;
-            border-radius: 0%;
+        body{
+            margin: 0;
+            padding: 0;
         }
-
-        #closedoor2 {
-            background-color: black;
-            background: repeating-linear-gradient(90deg, red, black 103px);
-            height: 100vh;
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 50%;
-            animation: door2 5s;
-            animation-fill-mode: both;
-            z-index: 2;
-            box-shadow: inset -10px -4px 17px 20px;
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
         }
-
-        @keyframes door1 {
-            100% {
-                left: -700px;
-            }
-        }
-
-        @keyframes door2 {
-            100% {
-                right: -700px;
-            }
+        .box{
+            background-color: dodgerblue;
+            margin: 10px;
+            padding: 10px;
+            flex-basis: 330px;
         }
     </style>
 </head>
-
 <body>
-
-    <div id="closedoor1"></div>
-    <div id="closedoor2"></div>
-
-    <script>
-
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            if (window.innerWidth <= 768) {
-                window.location.href = "warning_page.html";
-            }
-        } else {
-            alert("i haven't fully completed this game yet due to a lack of time, but i plan to finish it in the upcoming days")
-        }
-
-    </script>
+    <div class="container">
+        <div class="box">
+            <h1>samantha</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rem est culpa accusantium neque at architecto quo, id dolorum eos earum tenetur nihil excepturi provident itaque! Pariatur architecto nobis distinctio. Eligendi eaque dolore repudiandae at natus sint nisi alias voluptatibus. Iste culpa earum error aspernatur excepturi commodi aliquam nam magnam.</p>
+        </div>
+        <div class="box">
+            <h1>samantha</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rem est culpa accusantium neque at architecto quo, id dolorum eos earum tenetur nihil excepturi provident itaque! Pariatur architecto nobis distinctio. Eligendi eaque dolore repudiandae at natus sint nisi alias voluptatibus. Iste culpa earum error aspernatur excepturi commodi aliquam nam magnam.</p>
+        </div>
+        <div class="box">
+            <h1>samantha</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore rem est culpa accusantium neque at architecto quo, id dolorum eos earum tenetur nihil excepturi provident itaque! Pariatur architecto nobis distinctio. Eligendi eaque dolore repudiandae at natus sint nisi alias voluptatibus. Iste culpa earum error aspernatur excepturi commodi aliquam nam magnam.</p>
+        </div>
+    </div>
 </body>
-
 </html>
