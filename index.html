@@ -19,10 +19,32 @@
             justify-content: center;
         }
         .box{
-            background-color: coral;
+            background-color: green;
             margin: 10px;
             padding: 10px;
-            flex-basis: 30%;
+            flex: 30%;
+        }
+        @media(max-width:992px){
+            .box{
+                flex: 45%;
+                background-color: sienna;
+            }
+        }
+        @media(max-width: 768px){
+            .box{
+                background-color: yellow;
+            }
+        }
+        @media(max-width:576px){
+            .box{
+                flex: 100%;
+                background-color: blue;
+            }
+        }
+        @media(max-width:480px){
+            .box{
+                background-color: red;
+            }
         }
     </style>
 </head>
