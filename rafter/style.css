@@ -1,0 +1,188 @@
+header {
+    background-color: red;
+    color: white;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    align-items: center;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+header i {
+    padding: 0 10px;
+}
+
+/* navbar */
+
+.navbar {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.navbar img {
+    width: 100%;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.navbar-toggler {
+    position: absolute;
+    right: 4vw;
+}
+
+/* banner */
+
+.banner {
+    background: url(./images/hero-2.jpg) center;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+}
+
+.banner .text1{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+}
+
+.banner .text1 > div{
+    display: flex;
+    flex-wrap: wrap;
+    background: black;
+    color: white;
+    align-items: center;
+    padding: 8px 10px;
+    align-items: center;
+    line-height: 1em;
+}
+
+.banner .text1 > div:nth-child(4){
+    background-color: red;
+}
+
+.banner .text1 i {
+    font-size: 1.8em;
+    color: red;
+    padding: 0px 46px;
+} 
+
+.banner .text2 {
+    color: white;
+    position: absolute;
+    left: 8vw;
+    top: 20vh;
+}
+
+.banner .text2 h1 {
+    font-size: 5vw;
+}
+
+.banner .text2 .authors {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.banner .text2 .authors img:nth-child(2){
+    position: relative;
+    right: 36px;
+}
+
+.banner .text2 .authors img:nth-child(3){
+    position: relative;
+    right: 72px;
+}
+
+.banner .text2 .authors img:nth-child(4){
+    position: relative;
+    right: 108px;
+}
+
+.banner .text2 .authors img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.banner .author-text{
+    margin-left: -8%;
+}
+
+/* banner labels */
+
+.banner-label {
+    position: relative;
+    top: -28px;
+}
+
+.banner-label .left {
+    background: #102039;
+    color: white;
+    text-align: center;
+    padding: 25px 12px;
+}
+
+.banner-label .right p {
+    color: #888888;
+}
+
+.banner-label .left i {
+    font-size: 3em;
+}
+
+/* .banner-label span{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    color: green;
+    background-color: green;
+    position: absolute;
+    right: 22px;
+} */
+
+.banner-label .right {
+    padding: 18px;
+    padding: 40px 34px;
+}
+
+.banner-label .right a {
+    text-decoration: none;
+    color: gray;
+}
+
+.banner-label .col-md-6 {
+    margin-bottom: 10px;
+}
+
+/* slide */
+
+
+
+
+
+
+@media(max-width:992px) {
+    .banner .text1 {
+        display: none;
+    }
+}
+
+@media(max-width: 768px){
+    header .container {
+        display: none;
+    }
+    .banner .text2 h1{
+        font-size: 6vw;
+    }
+}
+@media(max-width: 480px){
+    .banner .text2 h3{
+        font-size: 5vw;
+    }
+    .banner .text2 h1{
+        font-size: 7vw;
+    }
+}
